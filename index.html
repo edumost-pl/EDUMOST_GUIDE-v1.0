@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylesEdu~MostCatalog">    
 </head>
 
 <body>
@@ -19,11 +20,12 @@
         <h3>Цели</h3>
 
         <ul>
+            <li>Создать крупнейшую двуязычную библиотеку интерактивных уроков для украинских детей, обучающихся в польской школе (1–8 классы).</li>
             <li>Помочь понять польскую школьную программу</li>
             <li>Уменьшить языковой барьер</li>
             <li>Сделать обучение интересным</li>
             <li>Поддержать родителей и учителей</li>
-        </ul>
+        </ul><br>
         <ol>
             <li>Каждый урок решает конкретную проблему.</li>
             <li>Объяснения простым языком.</li>
@@ -32,10 +34,13 @@
             <li>Интерактивность обязательна.</li>
             <li>Проверка знаний в конце.</li>
         </ol>
+        <h3>Архітектура</h3>
         <div class="architecture">
             <div class="box">Класс</div>
             <div class="arrow">→</div>
             <div class="box">Предмет</div>
+            <div class="arrow">→</div>
+            <div class="box">Кгига</div>
             <div class="arrow">→</div>
             <div class="box">Раздел</div>
             <div class="arrow">→</div>
@@ -43,9 +48,7 @@
         </div>
         <h2>Предметы</h2>
 
-        <div class="subjects">
-
-            
+        <div class="subjects">            
             <a href="matematyka.html" class="subject-link">
                 <div class="subject-card mat">
                     <h4>📐 Математика</h4>
@@ -105,39 +108,121 @@
             <tr>
                 <th>Предмет</th>
                 <th>Код</th>
-                <th>Цвет</th>
+                <th>Цвет - основной</th>
+                <th>Цвет - дополнительные</th>
                 <th>Иконка</th>
             </tr>
 
             <tr>
                 <td>Математика</td>
                 <td>MAT</td>
-                <td>#4A90E2</td>
+                <td style="color: #4A90E2;">#4A90E2</td>
+                <td><span style="color: #EAF4FF;">#EAF4FF</span></td>
                 <td>📐</td>
             </tr>
 
             <tr>
                 <td>Польский</td>
                 <td>POL</td>
-                <td>#8E44AD</td>
+                <td style="color: #8E44AD;">#8E44AD</td>
+                <td><span style="color: #F3E8FA;">#F3E8FA</span></td>
                 <td>📚</td>
             </tr>
 
             <tr>
                 <td>История</td>
                 <td>HIS</td>
-                <td>#B8860B</td>
+                <td style="color: #B8860B;">#B8860B</td>
+                <td><span style="color: #FFF8E1;">#FFF8E1</span></td>
                 <td>🏰</td>
             </tr>
+            <tr>
+                <td>Природа</td>
+                <td>PRZ</td>
+                <td style="color: #27AE60;">#27AE60</td>
+                <td><span style="color: #E8F5E9;">#E8F5E9</span></td>
+                <td>🌳 </td>
+            </tr>
+            <tr>
+                <td>География</td>
+                <td>GEO</td>
+                <td style="color: #43a047;">#43a047</td>
+                <td><span style="color: #EAF7EA;">#EAF7EA</span></td>
+                <td>🌍</td>
+            </tr>
+            <tr>
+                <td>Биология</td>
+                <td>BIO</td>
+                <td style="color: #009688;">#009688</td>
+                <td><span style="color: #E0F2F1;">#E0F2F1</span></td>
+                <td>🧬</td>
+            </tr>
+            <tr>
+                <td>Физика</td>
+                <td>FIZ</td>
+                <td style="color: #ff9800;">#ff9800</td>
+                <td><span style="color: #FFF3E0;">#FFF3E0</span></td>
+                <td>⚛️</td>
+            </tr>
+            <tr>
+                <td>Химия</td>
+                <td>CHE</td>
+                <td style="color: #00bcd4;">#00bcd4</td>
+                <td><span style="color: #E0F7FA;">#E0F7FA</span> </td>
+                <td>🧪</td>
+            </tr>
+            <tr>
+                <td>Информатика</td>
+                <td>INF</td>
+                <td style="color: #546e7a;">#546e7a</td>
+                <td><span style="color: #ECEFF1;">#ECEFF1</span></td>
+                <td>💻</td>
+            </tr>
+            <tr>
+                <td>Техника</td>
+                <td>TEC</td>
+                <td style="color: #7F8C8D;">#7F8C8D</td>
+                <td><span style="color: #F1F3F4;">#F1F3F4</span></td>
+                <td>🔧</td>
+            </tr>
+            <tr>
+                <td>Английский язык</td>
+                <td>ANG</td>
+                <td style="color: #e53935;">#e53935</td>
+                <td><span style="color: #FFEBEE;">#FFEBEE</span></td>
+                <td>🇬🇧</td>
+            </tr>
+            <tr>
+                <td>Обществознание (WOS)</td>
+                <td>WOS</td>
+                <td style="color: #D35400;">#D35400</td>
+                <td><span style="color: #FBE9E7;">#FBE9E7</span></td>
+                <td>⚖️</td>
+            </tr>
 
+            <tr>
+                <td>Музыка</td>
+                <td>MUZ</td>
+                <td style="color: #9B59B6;">#9B59B6</td>
+                <td><span style="color: #F3E5F5;">#F3E5F5</span></td>
+                <td>🎵</td>
+            </tr>
+            <tr>
+                <td>Искусство (Plastyka)</td>
+                <td>PLA</td>
+                <td style="color: #FF6B6B;">#FF6B6B</td>
+                <td><span style="color: #FFF0F0;">#FFF0F0</span></td>
+                <td>🎨</td>
+            </tr>
         </table>
 
         <br>
 
+
         <h3>Пример</h3>
 
         <p><strong>MAT4-UZ-003</strong></p>
-
+        <p class="p20">Формат: <b>[ПРЕДМЕТ][КЛАСС]-D[РАЗДЕЛ]-L[УРОК]</b></p>
         <ul>
             <li>MAT = математика</li>
             <li>4 = класс</li>
@@ -156,6 +241,22 @@
             <div class="badge updated">UPDATED</div>
 
         </div>
+        <h2>Логика уроков</h2>
+        <ul>
+            <li>🔵 Математика — точность</li>
+            <li>🟣 Польский — книги и творчество</li>
+            <li>🟤 История — старина</li>
+            <li>🟢 Природа — природа</li>
+            <li>🌎 География — карты и Земля</li>
+            <li>🌿 Биология — жизнь и наука</li>
+            <li>🟠 Физика — энергия</li>
+            <li>🔹 Химия — лаборатория</li>
+            <li>⚫ Информатика — технологии</li>
+            <li>🔧 Техника — инструменты</li>
+            <li>🔴 Языки — коммуникация</li>
+            <li>🟣 Музыка — искусство звука</li>
+            <li>🩷 Plastyka — творчество и рисование</li>
+        </ul>
     </section>
 </body>
 
