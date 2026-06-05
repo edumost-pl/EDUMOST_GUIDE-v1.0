@@ -77,15 +77,23 @@ section {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
 }
 h2 {
-    text-align: center;
-    margin-bottom: 35px;
-    font-size: 2rem;
-   color: #222;
-
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 2rem;
+  color: #7824ac;
+  text-align: center;
 }
 h3 {
   margin-bottom: 15px;
   margin-top: 20px;
+  text-align: center;
+}
+h4 {
+  margin-bottom: 15px;
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  /* color: #108175; */
 }
 ul,
 ol {
@@ -93,6 +101,18 @@ ol {
 }
 li {
   margin-bottom: 8px;
+  font-size: 19px;
+}
+p{
+  font-size: 20px;
+  margin: 10px;
+}
+pre{
+  font-size: 20px;
+  color: rgb(77, 45, 45);
+  font-weight: 700;
+  margin-left: -150px;
+  max-width: 100%;
 }
 .architecture {
   display: flex;
@@ -220,19 +240,19 @@ footer {
 }
 
 .subject-card {
-    cursor: pointer;
+  cursor: pointer;
 }
 .subject-link {
-    text-decoration: none; /* убрать подчеркивание */
-    color: inherit; /* наследовать цвет текста */
-    display: block; /* ссылка занимает всю карточку */
+  text-decoration: none; /* убрать подчеркивание */
+  color: inherit; /* наследовать цвет текста */
+  display: block; /* ссылка занимает всю карточку */
 }
 .subject-link,
 .subject-link:visited,
 .subject-link:hover,
 .subject-link:active {
-    text-decoration: none;
-    color: inherit;
+  text-decoration: none;
+  color: inherit;
 }
 @media (max-width: 768px) {
   header h1 {
@@ -251,9 +271,13 @@ footer {
 }
 
 /*  */
-.flex{
+.flex {
   display: flex;
   gap: 2%;
   justify-content: space-around;
   margin: 15px;
+  max-width: 100%;
+}
+.flex div{
+  width: 90%;
 }
